@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url(./normalize.css);
+@import url(./header.css);
+@import url(./hero.css);
+@import url(main.css);
+@import url(servicios.css);
+@import url(nov-nstrs-form.css);
+@import url(footer.css);
+
+:root {
+  --blanco: #fff;
+  --negro: #000;
+
+  --fondo: #d6d8dc;
+  --oscuro: #4d526e;
+  --primario: #86e3ce;
+  --gris: #464646;
+  --fuentePrincipal: "Roboto", sans-serif;
+  --sombreadoServicios: #eee;
+}
+
+/* Globales */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; /*hack para Box Model*/
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px; /* cada 1rem = 10px vale */
+  font-family: "Krub", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--oscuro);
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.boton {
+  background-color: var(--negro);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .boton {
+    margin-top: 4rem;
+    width: auto;
+  }
+}
+
+.boton:hover {
+  cursor: pointer;
+}
+
+/* Utilidades */
+
+.no-margin {
+  margin: 0;
+}
+.centrar-texto {
+  text-align: center;
+}
+
+.p-t {
+  padding-top: 2rem;
+}
+.m-b{
+  margin-bottom: 2rem;
+}
+
+.linea {
+  border-bottom: 0.5px solid black;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 35rem;
+}
+
+.texto-span {
+  display: block;
+  text-align: center;
+  margin: 3rem 0rem;
+  font-size: 2rem;
+}
+
+.sombra {
+  box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.38);
+  background-color: var(--blanco);
+}
+
+.oscurecer-img {
+  filter: brightness(60%);
+}
+
+/* Tipografia */
+h1{
+  font-size: 3.8rem;
+}
+h2{
+  font-size: 2.8rem;
+}
+

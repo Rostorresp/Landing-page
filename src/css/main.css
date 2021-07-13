@@ -1,0 +1,56 @@
+.main {
+  padding: 1rem 2rem;
+}
+.main__info p,
+.main__infoContent p {
+  font-size: 2rem;
+}
+
+.main__infoContent {
+  display: grid;
+  gap: 2rem;
+}
+.main__imageContent {
+  margin-bottom: 2rem;
+  max-width: 100%;
+  grid-row: 2 / 3;
+}
+
+.main__tittle {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+.main__info p,
+.main__infoContent p {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+.main__image {
+  max-width: 100%;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .main__image {
+    margin-top: 4rem;
+  }
+  .main__infoContent {
+    display: block;
+  }
+  .main__tittle {
+    font-size: 4rem;
+  }
+  .main__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  .main__info p,
+  .main__infoContent p {
+    font-size: 1.7rem;
+    margin: 0;
+  }
+  .main__imageContent {
+    margin-bottom: 8rem;
+  }
+}
