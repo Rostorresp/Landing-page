@@ -1,6 +1,6 @@
 # Landing Page Design
 
-# HTML
-# CSS
-# JavaScript
-# PHP
+HTML
+CSS
+JavaScript
+PHP
