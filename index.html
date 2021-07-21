@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <meta name="description" content="Página web de diseño" >
 
     <script src="https://kit.fontawesome.com/264bb87c77.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link rel="shortcut icon" href="./src/img/rubik.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Preload -->
+    <link rel="preload" href="./src/css/style.css" as="style">
     <link rel="stylesheet" href="/src/css/style.css">
 
 </head>
@@ -73,11 +77,18 @@
                         aliquam. In commodo sollicitudin ligula, non tempor enim feugiat et. Ut rutrum mattis nisl, sit
                         amet lacinia odio. Phasellus sollicitudin nulla ligula, quis cursus nisl porta at. Praesent et
                         mi vel urna commodo suscipit. </p>
-                    <img class="main__image" src="./src/img/trabajadores.jpg">
+                    <picture>
+                        <source srcset="./src/img/trabajadores.webp" type="image/webp">
+                        <img loading="lazy" class="main__image" src="./src/img/trabajadores.jpg"
+                            alt="imagen trabajadores">
+                    </picture>
                 </article>
                 <article class="main__info">
                     <div class="main__infoContent">
-                        <img class="main__imageContent" src="./src/img/sectionwork.jpg">
+                        <picture>
+                            <source srcset="./src/img/sectionwork.webp" type="image/webp">
+                            <img loading="lazy" class="main__imageContent" src="./src/img/sectionwork.jpg">
+                        </picture>
                         <p>
                             Suspendisse rutrum sit amet nisl quis ultricies. Sed gravida, erat
                             eget tincidunt gravida, ipsum ligula fringilla sapien, in lacinia urna nibh a erat. Cras
@@ -101,35 +112,35 @@
 
                     <section class="servicio">
                         <li class="servicio__iconos on-item-pasos" data-pasos="info">
-                            <img class="servicio__svg" src="./src/img/servicios/servicios1.svg" alt="">
+                            <img loading="lazy" class="servicio__svg" src="./src/img/servicios/servicios1.svg" alt="">
                         </li>
                         <h3>lorem impsun </h3>
                     </section>
 
                     <section class="servicio">
                         <li class="servicio__iconos" data-pasos="message">
-                            <img class="servicio__svg" src="./src/img/servicios/servicios2.svg" alt="">
+                            <img loading="lazy" class="servicio__svg" src="./src/img/servicios/servicios2.svg" alt="">
                         </li>
                         <h3>lorem impsun</h3>
                     </section>
 
                     <section class="servicio">
                         <li class="servicio__iconos" data-pasos="contrat">
-                            <img class="servicio__svg" src="./src/img/servicios/servicios3.svg" alt="">
+                            <img loading="lazy" class="servicio__svg" src="./src/img/servicios/servicios3.svg" alt="">
                         </li>
                         <h3>lorem impsun</h3>
                     </section>
 
                     <section class="servicio">
                         <li class="servicio__iconos" data-pasos="pago">
-                            <img class="servicio__svg" src="./src/img/servicios/servicios4.svg" alt="">
+                            <img loading="lazy" class="servicio__svg" src="./src/img/servicios/servicios4.svg" alt="">
                         </li>
                         <h3>lorem impsun</h3>
                     </section>
                 </ul>
 
                 <div class="pasos-detail servicios__contenido">
-                    <article id="step1" class="on-pasos-detail" data-pasos="info">
+                    <article class="on-pasos-detail" data-pasos="info">
                         <p>
                             Mauris ipsum tortor, maximus sed nunc a, ullamcorper aliquam dui. Aenean vehicula aliquet
                             nisi, ornare vehicula lorem ullamcorper pretium. Phasellus in tellus convallis, porta orci
@@ -139,7 +150,7 @@
                             eleifend laoreet.
                         </p>
                     </article>
-                    <article id="step2" data-pasos="message">
+                    <article data-pasos="message">
                         <p>
                             Sed non tempor justo, at accumsan tortor. Curabitur viverra nisi erat, at auctor neque
                             porttitor at. Etiam eu elit non tellus condimentum molestie at vitae leo. Etiam gravida
@@ -149,7 +160,7 @@
                             rhoncus. Vivamus a rutrum eros. Fusce quis egestas ante.
                         </p>
                     </article>
-                    <article id="step3" data-pasos="contrat">
+                    <article data-pasos="contrat">
                         <p>
                             Aliquam iaculis metus sollicitudin, convallis orci in, volutpat lorem. Praesent in ante ac
                             justo laoreet molestie non ut lorem. Nullam porttitor malesuada fermentum. Morbi sapien
@@ -158,7 +169,7 @@
                             placerat metus congue. Phasellus eget enim feugiat, malesuada augue a, accumsan odio.
                         </p>
                     </article>
-                    <article id="step4" data-pasos="pago">
+                    <article data-pasos="pago">
                         <p>
                             Aenean non ante sem. In in molestie purus. In sapien orci, varius non turpis et, aliquet
                             egestas orci. Proin quis lectus et leo tincidunt fermentum. Donec molestie sem vel velit
@@ -186,13 +197,25 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="./src/img/novedades/novedades1.jpg" class="d-block w-100" alt="...">
+                        <picture>
+                            <source srcset="./src/img/novedades/novedades1.webp" type="image/webp">
+                            <img loading="lazy" src="./src/img/novedades/novedades1.jpg" class="d-block w-100"
+                                alt="...">
+                        </picture>
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./src/img/novedades/novedades2.jpg" class="d-block w-100" alt="...">
+                        <picture>
+                            <source srcset="./src/img/novedades/novedades2.webp">
+                            <img loading="lazy" src="./src/img/novedades/novedades2.jpg" class="d-block w-100"
+                                alt="...">
+                        </picture>
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./src/img/novedades/novedades3.jpg" class="d-block w-100" alt="...">
+                        <picture>
+                            <source srcset="./src/img/novedades/novedades3.webp" type="image/webp">
+                            <img loading="lazy" src="./src/img/novedades/novedades3.jpg" class="d-block w-100"
+                                alt="...">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -203,7 +226,10 @@
             <h2 class="servicios__tittle">NOSOTROS</h2>
             <div class="nosotros">
                 <div class="nosotros__imagen">
-                    <img src="./src/img/nosotros.jpg" alt="imagen nosotros">
+                    <picture>
+                        <source srcset="./src/img/nosotros.webp" type="image/webp">
+                        <img loading="lazy" src="./src/img/nosotros.jpg" alt="imagen nosotros">
+                    </picture>
                 </div>
                 <div class="nosotros__texto">
                     <p> Cras vel odio id tortor dapibus tristique nec sed urna. Curabitur congue, enim vitae luctus
@@ -283,6 +309,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
             </script>
+        <script src="./src/js/modernizr.js"></script>
 
     </body>
 

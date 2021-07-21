@@ -18,6 +18,11 @@
   margin: 0 auto;
 }
 
+.servicio:hover .servicio__iconos {
+  transform: translateY(-10px);
+  border: 2px solid #000;
+}
+
 .servicios__tittle {
   width: max-content;
   text-align: center;
@@ -34,6 +39,7 @@
 }
 
 .servicio .servicio__iconos {
+  transition: transform .5s;
   height: 7rem;
   width: 7rem;
   background-color: var(--primario);
@@ -72,6 +78,7 @@
 .servicio__svg:hover {
   cursor: pointer;
 }
+
 /* ---------------------------clickServicios-------------------------------- */
 
 .content-lista .pasos-detail {

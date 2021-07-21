@@ -1,3 +1,10 @@
+.webp .hero{
+  background-image: url(../img/imageprincipal.webp);
+}
+
+.no-webp .hero {
+  background-image: url(../img/imageprincipal.jpg);
+}
 .hero {
   background-image: url(../img/imageprincipal.jpg);
   background-repeat: no-repeat;
