@@ -1,6 +1,10 @@
 .servicios {
   display: flex;
 }
+.servicio__iconos{
+  border: none;
+}
+
 @media screen and (min-width: 768px) {
   .servicios {
     display: grid;
@@ -18,7 +22,8 @@
   margin: 0 auto;
 }
 
-.servicio:hover .servicio__iconos {
+.servicio:hover .servicio__iconos, 
+.servicio__activo {
   transform: translateY(-10px);
   border: 2px solid #000;
 }

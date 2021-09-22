@@ -8,7 +8,7 @@ document.getElementById("menu").addEventListener("click", function () {
 // ----------------------------- servicios------------------------------------------
 
 window.addEventListener('load', () => {
-  let $items = document.querySelectorAll('.servicios__container ul li');
+  let $items = document.querySelectorAll('.servicios__container ul li button');
   let $detail = document.querySelectorAll('.pasos-detail article');
   // let $dataActive = null;
 
@@ -37,6 +37,42 @@ window.addEventListener('load', () => {
   })
 
 })
+
+
+const botones = document.querySelectorAll('.servicio__iconos');
+
+botones.forEach((boton) => {
+  boton.addEventListener('click', () => {
+    boton.classList.add('servicio__activo');
+    botones.forEach((boton2) => {
+      if (boton.id !== boton2.id) {
+        boton2.classList.remove('servicio__activo')
+      }
+    });
+  });
+});
+
+boton.forEach((boton) => {
+
+})
+
+
+
+//id=#search
+//id=#person
+//id=#carter
+//id=#hands
+
+
+
+//botones.forEach((boton) => {
+  //boton.addEventListener('click', () => {
+    // agregar la clase .activo al boton
+    //const idDondeHiceClick = boton.id;
+    // tienes que recorrer el NodeList "botones" con un loop (puedes usar botones.forEach)
+    // a cada boton que no tenga idClick (le quitas la clase .activo)
+  //});
+//});
 
 
 

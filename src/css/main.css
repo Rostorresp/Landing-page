@@ -19,6 +19,7 @@
 .main__tittle {
   font-size: 3rem;
   padding-bottom: 2rem;
+  padding: 1rem 0 1rem 0;
 }
 .main__info p,
 .main__infoContent p {
